@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.karantiwana.gpsencryption" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+>
+    <uses-permission android:name="android.permission.INTERNET" />
+>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="GPS Encryption"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="GPS Encryption"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                android:screenOrientation="portrait" >
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CuslocActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Custom location"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DecryptActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Decryption"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/mainactivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt file using this location"
+        android:id="@+id/btencgpsloc"
+        android:layout_marginTop="52dp"
+        android:width= "700px"
+        android:height= "200px"
+        android:layout_below="@+id/tvfile"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt file using custom location"
+        android:id="@+id/btenccusloc"
+        android:width= "700px"
+        android:height= "200px"
+        android:layout_below="@+id/btencgpsloc"
+        android:layout_alignLeft="@+id/btencgpsloc"
+        android:layout_alignStart="@+id/btencgpsloc"
+        android:layout_marginTop="82dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgbtdec"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:width= "150px"
+        android:height= "150px"
+        android:background="@drawable/openlock"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude:"
+        android:id="@+id/tvlong2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        android:id="@+id/tvlat2"
+        android:layout_below="@+id/tvlong2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvlat"
+        android:layout_alignTop="@+id/tvlat2"
+        android:layout_toRightOf="@+id/tvlong2"
+        android:layout_toEndOf="@+id/tvlong2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvlong"
+        android:layout_alignTop="@+id/tvlong2"
+        android:layout_toRightOf="@+id/tvlong2"
+        android:layout_toEndOf="@+id/tvlong2"
+        android:editable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Selected:"
+        android:id="@+id/tvfile"
+        android:layout_below="@+id/imgbtdec"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No file selected"
+        android:id="@+id/tvfilepath"
+        android:layout_below="@+id/imgbtdec"
+        android:layout_toRightOf="@+id/tvfile"
+        android:layout_toEndOf="@+id/tvfile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tvmsg"
+        android:layout_marginTop="44dp"
+        android:textSize="50px"
+        android:layout_below="@+id/btenccusloc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imgbtdec"
+        android:layout_alignEnd="@+id/imgbtdec" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/help"
+        android:width= "170px"
+        android:height= "170px"
+        android:background="@drawable/qmark"
+        android:layout_below="@+id/tvfilepath"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
